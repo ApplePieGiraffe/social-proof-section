@@ -1,0 +1,107 @@
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50rem;
+    margin: 1.75rem;
+    padding: 2.25rem 3.5rem;
+    border-radius: 5px;
+    background-color: var(--color-light-greyish-magenta);
+
+    @media only screen and (max-width: 1200px) {
+        width: 45rem;
+        padding: 2rem 3.25rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        margin: 1rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__stars {
+        margin-right: 3.25rem;
+
+        @media only screen and (max-width: 400px) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        svg {
+            height: 1.75rem;
+        }
+    }
+
+    &__text {
+        color: var(--color-very-dark-magenta);
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 1.25rem;
+        }
+
+        @media only screen and (max-width: 400px) {
+            text-align: center;
+        }
+    }
+}
+
+.review {
+    width: 30%;
+    padding: 4rem 3rem;
+    background-color: var(--color-very-dark-magenta);
+    border-radius: 8px;
+
+    @media only screen and (max-width: 1000px) {
+        width: 50%;
+        min-width: 40rem;
+        margin: 2rem 0;
+    }
+
+    @media only screen and (max-width: 400px) {
+        min-width: 100%;
+    }
+
+    &__customer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &__avatar {
+            height: 5rem;
+            margin-right: 3rem;
+            border-radius: 50%;
+        }
+
+        &__text {
+            font-size: 1.75rem;
+
+            @media only screen and (max-width: 1200px) {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                margin-bottom: .75rem;
+                color: white;
+            }
+
+            span {
+                color: var(--color-soft-pink);
+            }
+        }
+    }
+
+    &__text {
+        color: white;
+        font-size: 1.75rem;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 1.5rem;
+        }
+    }
+}

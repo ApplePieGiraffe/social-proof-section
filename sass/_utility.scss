@@ -1,0 +1,42 @@
+// MARGIN
+.mg-bottom-sm {
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 1000px) {
+        margin-bottom: 3rem;
+    }
+}
+
+// TRANSFORM
+.transform-x-md {
+    transform: translateX(-10rem);
+
+    @media only screen and (max-width: 1000px) {
+        transform: translate(0);
+    }
+}
+
+.transform-x-sm {
+    transform: translateX(-5rem);
+
+    @media only screen and (max-width: 1000px) {
+        transform: translate(0);
+    }
+    
+}
+
+.transform-y-md {
+    transform: translateY(6rem);
+
+    @media only screen and (max-width: 1000px) {
+        transform: translate(0);
+    }
+}
+
+.transform-y-sm {
+    transform: translateY(3rem);
+    
+    @media only screen and (max-width: 1000px) {
+        transform: translate(0);
+    }
+}

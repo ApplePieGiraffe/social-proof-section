@@ -1,0 +1,115 @@
+body  {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    overflow-x: hidden;
+
+    @media only screen and (max-width: 1000px) {
+        height: min-content;
+        padding: 10rem 0;
+
+        background: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    width: 80%;
+
+    @media only screen and (max-width: 1000px) {
+        height: 100%;
+        width: 100%;
+        padding: 3rem;
+    }
+}
+
+.top {
+    display: flex;
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .hero {
+        width: 55rem;
+        margin-right: auto;
+
+        @media only screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .subheading {
+            @media only screen and (max-width: 1000px) {
+                width: 60%;
+                min-width: 40rem;
+                margin-bottom: 3rem;
+            }
+
+            @media only screen and (max-width: 400px) {
+                min-width: 100%;
+            }
+        }
+    }
+
+    .ratings {
+        @media only screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: 400px) {
+            width: 100%;
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 2rem;
+    color: var(--color-dark-greyish-blue);
+    font-size: 11px;
+
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+
+    a { 
+        margin-left: 5px;
+        color: var(--color-light-blue); 
+    }
+}

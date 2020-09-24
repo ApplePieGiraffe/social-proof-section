@@ -1,0 +1,31 @@
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+.heading {
+    color: var(--color-very-dark-magenta);
+    font-size: 6.25rem;
+    letter-spacing: -2px;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 5.5rem;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+}
+
+.subheading {
+    color: var(--color-dark-greyish-magenta);
+    font-size: 2rem;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 1.75rem;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        text-align: center;
+    }
+}
